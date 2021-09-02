@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Funcionário</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <form method="POST" action="./index.php">
+
+        <h1>Calcular Salários - Fulbank</h1>
+
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" required />
+
+
+        <label for="salarioAtual">Salário Atual</label>
+        <input id="salarioAtual" name="salarioAtual" required />
+
+        <div class="input-radio">
+            <input type="radio" id="masculino" name="genero" value="m" required />
+            <label for="masculino">Masculino</label>
+        </div>
+        
+        <div class="input-radio">
+            <input type="radio" id="feminino" name="genero" value="f" required />
+            <label for="feminino">Feminino</label>
+        </div>
+
+
+        <div class="input-radio" style="margin-bottom: 10px;">
+            <input type="radio" id="outro" name="genero" value="o" required />
+            <label for="outro">Outro</label>
+        </div>
+
+
+        <label for="cargo">Cargo</label>
+        <select id="cargo" name="cargo" required> 
+            <option value="">SELECIONE</option>
+            <option >Gerente de Projetos</option>
+            <option>Desenvolvedor Back-end</option>
+            <option>Desenvolvedor Front-end</option>
+            <option>DevOps</option>
+            <option>Designer UX/UI</option>
+            <option>QA</option>
+            <option>Gerente de Produto</option>
+            <option>Engenheiro de Software</option>
+            <option>Arquiteto</option>
+            <option>DBA</option>
+            <option>Analista de Sistemas</option>
+        </select>
+
+        <button>Gerar conta</button>
+    </form>
+</body>
+
+</html>
